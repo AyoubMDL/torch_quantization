@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 100
+# refer to https://flake8.pycqa.org/en/2.6.0/warnings.html for error codes.
+per-file-ignores =
+    # module import error
+    __init__.py: F401, F403, F405
+# make whitespace around operators mandatory
+extend-select =
+    E225,
+    E226
